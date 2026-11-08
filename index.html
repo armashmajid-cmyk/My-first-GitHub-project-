@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Armash Majid — BSAI student building toward AI engineering and entrepreneurship." />
+  <title>Armash Majid | AI Engineer Portfolio</title>
+  <style>
+    :root{--bg:#07111f;--panel:#0d1b2d;--panel2:#10233a;--text:#edf5ff;--muted:#a9bbd0;--blue:#55b7ff;--cyan:#62e3df;--line:rgba(255,255,255,.11)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 80% 0%,#12365a 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(7,17,31,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.3px}.brand span{color:var(--cyan)}
+    .navlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}.navlinks a:hover{color:var(--cyan)}
+    .hero{padding:92px 0 76px;display:grid;grid-template-columns:1.35fr .65fr;gap:44px;align-items:center}
+    .eyebrow{color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+    h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.05;margin:14px 0 18px;letter-spacing:-2px}
+    h1 span{background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:650px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:10px;font-weight:750;border:1px solid var(--line);transition:.2s}
+    .primary{background:linear-gradient(110deg,#168de0,#26b9b4);color:#03111e;border:0}.btn:hover{transform:translateY(-2px)}
+    .profile-card{background:linear-gradient(150deg,rgba(85,183,255,.17),rgba(98,227,223,.06));border:1px solid rgba(98,227,223,.25);padding:30px;border-radius:24px;box-shadow:0 25px 80px rgba(0,0,0,.25)}
+    .monogram{width:92px;height:92px;border-radius:25px;display:grid;place-items:center;font-size:2rem;font-weight:900;background:linear-gradient(135deg,#1b8fe0,#5be0d7);color:#061322;margin-bottom:20px}
+    .profile-card h2{margin:0 0 5px}.profile-card p{color:var(--muted);margin:0}
+    .mini-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.tag{font-size:.78rem;padding:6px 10px;border:1px solid var(--line);border-radius:99px;color:#c9e7ff}
+    section{padding:66px 0;border-top:1px solid var(--line)}.section-head{margin-bottom:28px}
+    h2.section-title{font-size:2rem;margin:0 0 8px;letter-spacing:-.6px}.section-head p,.muted{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .card{background:linear-gradient(150deg,var(--panel),rgba(13,27,45,.72));border:1px solid var(--line);border-radius:17px;padding:22px}
+    .card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:9px 13px;border-radius:9px;background:var(--panel2);border:1px solid var(--line);color:#d6eaff}
+    .project-note{margin-top:14px;font-size:.9rem;color:var(--muted)}
+    .repo-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+    .repo{padding:17px;border-radius:13px;background:var(--panel2);border:1px solid var(--line)}
+    .repo strong{display:block;margin-bottom:5px}.repo small{color:var(--muted)}
+    .contact{display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap;background:linear-gradient(120deg,rgba(22,141,224,.17),rgba(38,185,180,.1));border:1px solid rgba(98,227,223,.2);padding:28px;border-radius:20px}
+    footer{padding:28px 0;color:var(--muted);font-size:.9rem}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:65px 0}.grid{grid-template-columns:1fr 1fr}.navlinks{gap:12px;font-size:.82rem}}
+    @media(max-width:560px){nav{height:auto;padding:15px 0;align-items:flex-start;flex-direction:column}.navlinks{gap:12px}.grid,.repo-list{grid-template-columns:1fr}section{padding:48px 0}h1{letter-spacing:-1.2px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">ARMASH<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">BSAI Student · Future AI Engineer</div>
+      <h1>Building ideas into <span>intelligent solutions.</span></h1>
+      <p class="lead">I'm Armash Majid, a Bachelor of Science in Artificial Intelligence student focused on learning how to think, build, and solve real-world problems with AI and software engineering.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my work</a>
+        <a class="btn" href="https://www.linkedin.com/in/armash-majid-3a9b67433/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" id="github-profile" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+    <aside class="profile-card">
+      <div class="monogram">AM</div>
+      <h2>Armash Majid</h2>
+      <p>Artificial Intelligence Student</p>
+      <div class="mini-tags"><span class="tag">Think</span><span class="tag">Build</span><span class="tag">Question</span><span class="tag">Create</span></div>
+    </aside>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><h2 class="section-title">About Me</h2><p>Curiosity, consistent learning, and practical problem-solving.</p></div>
+    <div class="card"><p class="muted">I am developing a strong foundation in artificial intelligence, programming, mathematics, and system thinking. My goal is to grow into an AI Engineer and, over time, build meaningful technology products as an AI Entrepreneur. I believe in learning one concept, building one project, and making one improvement at a time.</p></div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head"><h2 class="section-title">Education & Direction</h2><p>Building strong fundamentals for a career in AI.</p></div>
+    <div class="grid">
+      <article class="card"><h3>Bachelor of Science in Artificial Intelligence</h3><p>Undergraduate student — Bahauddin Zakariya University (BZU).</p></article>
+      <article class="card"><h3>Core Foundations</h3><p>Programming, discrete structures, mathematics, logic, data, and computational thinking.</p></article>
+      <article class="card"><h3>Career Vision</h3><p>AI Engineering, Generative AI, real-world product development, and entrepreneurship.</p></article>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><h2 class="section-title">Skills I'm Developing</h2><p>A learning roadmap — not a claim of mastery.</p></div>
+    <div class="skills">
+      <span class="skill">Python</span><span class="skill">C++</span><span class="skill">Artificial Intelligence</span><span class="skill">Machine Learning</span><span class="skill">Deep Learning</span><span class="skill">Generative AI</span><span class="skill">Data Structures & Algorithms</span><span class="skill">Discrete Mathematics</span><span class="skill">SQL & Databases</span><span class="skill">System Design</span><span class="skill">APIs & Backend</span><span class="skill">MLOps</span>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><h2 class="section-title">Projects & Learning</h2><p>Selected work will appear here as you publish it.</p></div>
+    <div class="grid">
+      <article class="card"><h3>AI Learning Projects</h3><p>Practical experiments in Python, machine learning, and intelligent applications.</p></article>
+      <article class="card"><h3>System Thinking Models</h3><p>Exploring how sets, relations, functions, logic, and graphs model real-world systems.</p></article>
+      <article class="card"><h3>Software & Web Projects</h3><p>Building programming fundamentals and turning ideas into usable digital products.</p></article>
+    </div>
+    <p class="project-note">GitHub repositories can load here automatically once your GitHub username is added to the configuration in this file.</p>
+    <div id="repos" class="repo-list" aria-live="polite"></div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact">
+      <div><h2 class="section-title">Let's connect.</h2><p class="muted">Open to learning, collaboration, and meaningful technology conversations.</p></div>
+      <div class="actions" style="margin:0">
+        <a class="btn primary" href="https://www.linkedin.com/in/armash-majid-3a9b67433/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener" id="github-contact">View GitHub</a>
+      </div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Armash Majid. Built with purpose and continuous learning.</div></footer>
+
+<script>
+  // Add your GitHub username here to display your latest public repositories.
+  const GITHUB_USERNAME = "armash-majid-cmyk";
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  if (GITHUB_USERNAME && GITHUB_USERNAME !== "YOUR_GITHUB_USERNAME") {
+    const profileUrl = `https://github.com/${GITHUB_USERNAME}`;
+    document.getElementById("github-profile").href = profileUrl;
+    document.getElementById("github-contact").href = profileUrl;
+    fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=6`)
+      .then(response => {
+        if (!response.ok) throw new Error("GitHub repositories could not be loaded.");
+        return response.json();
+      })
+      .then(repos => {
+        const target = document.getElementById("repos");
+        repos.forEach(repo => {
+          const item = document.createElement("a");
+          item.className = "repo";
+          item.href = repo.html_url;
+          item.target = "_blank";
+          item.rel = "noopener";
+          const title = document.createElement("strong");
+          title.textContent = repo.name;
+          const detail = document.createElement("small");
+          detail.textContent = `${repo.language || "Project"} · ${repo.stargazers_count} stars`;
+          item.append(title, detail);
+          target.appendChild(item);
+        });
+        if (!repos.length) target.textContent = "No public repositories found yet. Your projects will appear here when published.";
+      })
+      .catch(() => {
+        document.getElementById("repos").textContent = "GitHub repository preview will appear after the username is configured.";
+      });
+  }
+</script>
+</body>
+</html>
